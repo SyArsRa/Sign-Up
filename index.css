@@ -25,12 +25,23 @@ body {
   line-height: 0;
 }
 .form{
-  margin: 0.3%;
-  background-color: #000;
+  background-color: #E8EDF0;
   width: 70vw;
 }
 .name{
-  margin: 1%;
-  color: #B8BEC3;
+  margin: 2% 0 0 3%;
+  color: #3B3C45;
+}
+.login, .login:visited{
+  color:#68BEC8;
+  text-decoration: none;
+}
+.login:hover{
   text-decoration: underline;
+  cursor: pointer;
+}
+.line{
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, #B3A742 , #E8EDF0);
 }
