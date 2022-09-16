@@ -45,3 +45,34 @@ body {
   height: 3px;
   background-image: linear-gradient(to right, #B3A742 , #E8EDF0);
 }
+.entry{
+  display: block;
+  width: 15vw;
+  margin: 1% 0 0 0;
+}
+.contain{
+  display: inline-flex;
+  margin-bottom: 3%;
+}
+input:not(:focus)
+input:valid:focus{
+  outline: none;
+  border: 2px solid #0F0;
+  border-radius: 7px;
+  width: 9.3vw;
+  height: 2.3vh;
+}
+input:invalid:focus{
+  outline: none;
+  border: 2px solid red;
+  border-radius: 7px;
+  width: 9.3vw;
+  height: 2.3vh;
+}
+input{
+  outline: none;
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 9.3vw;
+  height: 2.3vh;
+}
