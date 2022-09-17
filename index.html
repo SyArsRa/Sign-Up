@@ -3,29 +3,34 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js" defer></script>
     <title></title>
   </head>
   <body>
     <div>
-      <img src="clouds.jpg" class='sidebar'></img>
+      <img src="clouds.jpg" class='sidebar' alt="Clouds"></img>
       <div class="title">
-        <img src="logo.svg" width="8%"></img>
+        <img src="logo.svg" width="8%" alt="logo"></img>
         &nbsp &nbsp
-        <h1>The Clouds Inc.</h1>
+        <h1 class="logoTitle">The Clouds Inc.</h1>
       </div>
     </div>
     <div class="form">
-      <h3 class="name">This is not a real sign up form, please do not enter and real information! <br>
+      <h3 class="name">This is not a real sign up form, please do not enter any real information! <br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec at felis id leo <br>
         scelerisque feugiat eget ut diam. Pellentesque ultrices,mi id placerat varius.</h3>
       <h3 class="name">Already A Member? <a href="https://github.com/SyArsRa"  class="login"><em>Log in</em></a></h3>
       <hr class="line" />
-      <form class="name">
+      <h2 class='name'>Sign-Up Form</h2>
+      <form class="name" id='form'>
       <span class="contain">
         <div class="entry">
           <label>Email Address*</label>
           <input type="email" required></input>
         </div>
+      </span>
+      <br>
+      <span class="contain">
         <div class="entry">
           <label>First Name*</label>
           <input type="text" required></input>
@@ -39,20 +44,25 @@
           <input type="text" required></input>
         </div>
       </span>
+      <br>
       <span>
         <span class="contain">
           <div class="entry">
-            <label for="">Username*</label>
-            <input type="text" required></input>
+            <label for="username">Username*</label>
+            <input name="username" type="text" required></input>
           </div>
           <div class="entry">
-            <label for="">Password*</label>
-            <input type="password" required></input>
+            <label for="password">Password*</label>
+            <input name="password" type="password" id="password" required></input>
           </div>
             <div class="entry">
-              <label for="">Confirm Password*</label>
-              <input type="password" required></input>
+              <label for="cpassword">Confirm Password*</label>
+              <input type="password" name="cpassword" id="confirmpassword" required></input>
             </div>
+        </span>
+        <h6 id="warning">*Passwords Do Not Match</h6>
+        <span class="btn">
+          <button type="button" id="subBtn">Submit</button>
         </span>
       </form>
     </div>
